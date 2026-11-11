@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cesar cuts barbershop – Newark, NJ</title>
+<style>
+  :root {
+    --ink: #1c1c1e;
+    --muted: #5c5c63;
+    --bg: #f6f4f0;
+    --card: #ffffff;
+    --accent: #b3261e;
+    --accent-dark: #8c1d17;
+    --line: #e4e0d8;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  .banner {
+    background: #111;
+    color: #f1f1f1;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 6px 12px;
+  }
+  header.hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 40px 20px 48px;
+    text-align: center;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { margin: 0 0 8px; font-size: 2rem; line-height: 1.15; }
+  .rating { font-size: 1.1rem; margin: 8px 0 4px; }
+  .stars { color: #f5b301; letter-spacing: 2px; }
+  .address { color: #d6d6d6; margin: 4px 0 20px; }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-outline { background: transparent; color: #fff; border-color: #fff; }
+  .btn-outline:hover { background: rgba(255,255,255,0.12); }
+  main { padding: 24px 16px 48px; }
+  section {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px 20px;
+  }
+  h2 { margin-top: 0; font-size: 1.4rem; }
+  ul.hours { list-style: none; margin: 0; padding: 0; }
+  ul.hours li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  ul.hours li:last-child { border-bottom: none; }
+  form { display: grid; gap: 14px; }
+  label { display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #bdb8ae;
+    border-radius: 8px;
+    background: #fff;
+  }
+  input:focus, textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  textarea { min-height: 90px; resize: vertical; }
+  .row { display: grid; gap: 14px; grid-template-columns: 1fr; }
+  @media (min-width: 560px) {
+    .row { grid-template-columns: 1fr 1fr; }
+    h1 { font-size: 2.6rem; }
+  }
+  #demo-msg {
+    display: none;
+    background: #fff4e5;
+    border: 1px solid #f0c27a;
+    color: #5a3b00;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .note { font-size: 0.85rem; color: var(--muted); margin: 14px 0 0; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 0 16px 32px; }
+</style>
+</head>
+<body>
+
+<div class="banner">Sample homepage concept for Cesar cuts barbershop. Not their official website.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Cesar cuts barbershop</h1>
+    <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span> 4.9 on Google · 167 reviews</div>
+    <p class="address">704 Summer Ave, Newark, NJ 07104, USA</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#book">Book Now</a>
+      <a class="btn btn-outline" href="tel:+19737107111">Call (973) 710-7111</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="hours">
+    <h2>Opening hours</h2>
+    <ul class="hours">
+      <li>Monday: 10:00 AM – 6:00 PM</li>
+      <li>Tuesday: 10:00 AM – 6:00 PM</li>
+      <li>Wednesday: 10:00 AM – 6:00 PM</li>
+      <li>Thursday: 10:00 AM – 6:00 PM</li>
+      <li>Friday: 10:00 AM – 6:00 PM</li>
+      <li>Saturday: 10:00 AM – 6:00 PM</li>
+      <li>Sunday: 10:00 AM – 6:00 PM</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Visit or call</h2>
+    <p>Cesar cuts barbershop is a barber shop in Newark, NJ. Call to ask about services.</p>
+    <p><strong>Address:</strong><br>704 Summer Ave, Newark, NJ 07104, USA</p>
+    <p><a class="btn btn-primary" href="tel:+19737107111">Tap to call (973) 710-7111</a></p>
+  </section>
+
+  <section id="book">
+    <h2>Book an appointment</h2>
+    <form id="demo-form" novalidate>
+      <div class="row">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="day">Preferred day</label>
+          <input type="text" id="day" name="day" placeholder="e.g. Saturday">
+        </div>
+        <div>
+          <label for="time">Preferred time</label>
+          <input type="text" id="time" name="time" placeholder="e.g. 2:00 PM">
+        </div>
+      </div>
+      <div>
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" id="demo-btn">Request appointment</button>
+      <div id="demo-msg" role="status" aria-live="polite"></div>
+    </form>
+    <p class="note">This is a sample of how online booking could work.</p>
+  </section>
+</main>
+
+<footer>Sample homepage concept for Cesar cuts barbershop. Not their official website.</footer>
+
+<script>
+  document.getElementById('demo-btn').addEventListener('click', function () {
+    var msg = document.getElementById('demo-msg');
+    msg.textContent = 'Demo only: online booking is not connected yet.';
+    msg.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
